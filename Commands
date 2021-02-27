@@ -1,0 +1,19 @@
+Sum						: +  : y = a0+a1+... : id,y,yt,n,(a,at)'s
+Sub						: -  : y = a0-a1-... : id,y,yt,n,(a,at)'s
+Mul						: *  : y = a0*a1*... : id,y,yt,n,(a,at)'s
+Div						: /  : y = a0/a1/... : id,y,yt,n,(a,at)'s
+Pow						: ^  : y = a0^a1^... : id,y,yt,n,(a,at)'s
+Dot						: @  : y = a@b       : id,y,yt,a,at,b,bt
+Iter sum				: i+ : y = i+ a      : id,y,yt,a,at
+Iter sub				: i- : y = i- a      : id,y,yt,a,at
+Iter mul				: i* : y = i* a      : id,y,yt,a,at
+Iter div				: i/ : y = i/ a      : id,y,yt,a,at
+Iter pow				: i^ : y = i^ a      : id,y,yt,a,at
+Function				: )  : y = f(a,...)  : id,y,yt,f,n,(a,at)'s
+Transpose				: T  : y = a.T       : id,y,yt,a,at
+Kernel convultion		: |  : y = a | K mod : id,y,yt,a,at,k,kt,mode  (mode:('valid':0,'same':1))
+Convolution (x-size)	: #x : y = a #x b    : id,y,yt,a,at,b,bt,x's (x - block sizes)
+Pooling					: p) : y = pool(a,x) : id,y,yt,a,at,f,x's (x- block size)
+Random					: %  : y = %s        : id,y,yt,s	(srand will be : srand = grnd + s)
+Split					: s> : y0,y1... s> a : id,n,(y,yt)'s,a,at
+Pyramidals				: P  : y=P(a,w)mod|p : id,y,yt,a,at,w,wt,modid,param's
